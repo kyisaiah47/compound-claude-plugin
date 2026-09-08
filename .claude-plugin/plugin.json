@@ -4,9 +4,9 @@
   "version": "0.2.0",
   "description": "Documents and messy text into schema-validated JSON, in Claude Code. Wires the ParseRail MCP server (41 tools) and three skills that route a document to the right endpoint, redact PII before it is stored, and answer auth, pricing and error questions.",
   "author": {
-    "name": "Kynth Studios",
+    "name": "Compound Labs",
     "email": "hello@kynth.studio",
-    "url": "https://kynth.studio"
+    "url": "https://thecompound.tech"
   },
   "homepage": "https://parserail.kynth.studio",
   "repository": "https://github.com/kyisaiah47/kynth-claude-plugin",

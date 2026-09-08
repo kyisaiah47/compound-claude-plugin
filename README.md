@@ -8,7 +8,7 @@ A [Claude Code](https://code.claude.com) plugin that puts document work in the s
 | `redact-pii` | Strips names, emails, phones, SSNs and card numbers from text before it gets stored, logged, or shared |
 | `parserail-api` | The reference: auth, the credit wallet, error shapes, and which of the 41 tools fits which job, with per-call costs |
 
-ParseRail is the developer platform from [Kynth Studios](https://kynth.studio). It parses documents, extracts fields, redacts PII, analyzes contracts, fights chargebacks and enriches companies, each capability solved once and running in production behind one API key and one pay-per-call credit wallet.
+ParseRail is the developer platform from [Compound Labs](https://thecompound.tech). It parses documents, extracts fields, redacts PII, analyzes contracts, fights chargebacks and enriches companies, each capability solved once and running in production behind one API key and one pay-per-call credit wallet.
 
 ## Install
 
@@ -59,7 +59,7 @@ Skills are namespaced under the plugin: `/parserail:extract-financial-doc`, `/pa
 
 - **Gemini CLI**: [kynth-gemini-extension](https://github.com/kyisaiah47/kynth-gemini-extension)
 - **Any MCP client**: `npx -y @kynth/api-mcp`, listed in the official MCP registry as `studio.kynth/core`
-- **Keyless lookups from Kynth Studios**: [kynth-mcp](https://github.com/kyisaiah47/kynth-mcp), eleven read-only tools over live public data, no key and no signup
+- **Keyless lookups from Compound Labs**: [kynth-mcp](https://github.com/kyisaiah47/kynth-mcp), eleven read-only tools over live public data, no key and no signup
 
 ## License
 
