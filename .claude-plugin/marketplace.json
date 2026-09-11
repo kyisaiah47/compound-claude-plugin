@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "owner": {
     "name": "Compound Labs",
-    "email": "hello@kynth.studio",
+    "email": "hello@thecompound.tech",
     "url": "https://thecompound.tech"
   },
   "renames": {
@@ -20,7 +20,7 @@
       "version": "0.2.0",
       "author": {
         "name": "Compound Labs",
-        "email": "hello@kynth.studio",
+        "email": "hello@thecompound.tech",
         "url": "https://thecompound.tech"
       },
       "homepage": "https://parserail.kynth.studio",

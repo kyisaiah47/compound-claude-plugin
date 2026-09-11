@@ -5,7 +5,7 @@
   "description": "Documents and messy text into schema-validated JSON, in Claude Code. Wires the ParseRail MCP server (41 tools) and three skills that route a document to the right endpoint, redact PII before it is stored, and answer auth, pricing and error questions.",
   "author": {
     "name": "Compound Labs",
-    "email": "hello@kynth.studio",
+    "email": "hello@thecompound.tech",
     "url": "https://thecompound.tech"
   },
   "homepage": "https://parserail.kynth.studio",
