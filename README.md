@@ -15,14 +15,14 @@ ParseRail is the developer platform from [Compound Labs](https://thecompound.tec
 Inside a Claude Code session. This repo doubles as its own marketplace:
 
 ```
-/plugin marketplace add kyisaiah47/kynth-claude-plugin
+/plugin marketplace add kyisaiah47/compound-claude-plugin
 /plugin install parserail@kynth
 ```
 
 Or from your shell:
 
 ```bash
-claude plugin marketplace add kyisaiah47/kynth-claude-plugin
+claude plugin marketplace add kyisaiah47/compound-claude-plugin
 claude plugin install parserail@kynth
 ```
 
@@ -57,9 +57,9 @@ Skills are namespaced under the plugin: `/parserail:extract-financial-doc`, `/pa
 
 ## Also available
 
-- **Gemini CLI**: [kynth-gemini-extension](https://github.com/kyisaiah47/kynth-gemini-extension)
-- **Any MCP client**: `npx -y @kynth/api-mcp`, listed in the official MCP registry as `studio.kynth/core`
-- **Keyless lookups from Compound Labs**: [kynth-mcp](https://github.com/kyisaiah47/kynth-mcp), eleven read-only tools over live public data, no key and no signup
+- **Gemini CLI**: [kynth-gemini-extension](https://github.com/kyisaiah47/compound-gemini-extension)
+- **Any MCP client**: `npx -y @kynth/api-mcp`, listed in the official MCP registry as `studio.compound/core`
+- **Keyless lookups from Compound Labs**: [kynth-mcp](https://github.com/kyisaiah47/compound-mcp), eleven read-only tools over live public data, no key and no signup
 
 ## License
 
