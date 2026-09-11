@@ -1,6 +1,6 @@
 # ParseRail for Claude Code
 
-A [Claude Code](https://code.claude.com) plugin that puts document work in the session, powered by [ParseRail](https://parserail.kynth.studio). Installing it wires up the [`@kynth/api-mcp`](https://www.npmjs.com/package/@kynth/api-mcp) MCP server (41 tools) and adds three skills that teach Claude how to use it:
+A [Claude Code](https://code.claude.com) plugin that puts document work in the session, powered by [ParseRail](https://parserail.thecompound.tech). Installing it wires up the [`@kynth/api-mcp`](https://www.npmjs.com/package/@kynth/api-mcp) MCP server (41 tools) and adds three skills that teach Claude how to use it:
 
 | Skill | What it does |
 | --- | --- |
@@ -30,7 +30,7 @@ Installed before the 0.2.0 rename? The marketplace carries a `renames` entry, so
 
 ## Set your API key
 
-Mint a key at **[api.kynth.studio](https://api.kynth.studio)**. Keys start `ksk_live_`. Make it available to the MCP server:
+Mint a key at **[api.thecompound.tech](https://api.thecompound.tech)**. Keys start `ksk_live_`. Make it available to the MCP server:
 
 ```bash
 export KYNTH_API_KEY=ksk_live_your_key_here

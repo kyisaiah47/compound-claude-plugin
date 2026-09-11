@@ -49,4 +49,4 @@ Present the parts the user asked for. Offer the full JSON if they want to pipe i
 
 Calls debit the account credit wallet only on success. A failed call (bad input, timeout, server error) costs nothing, so a retry is safe. 1 credit = $0.01; the per-tool rates are in the table above.
 
-There is no free tier. A wallet starts at zero and is topped up by a credit pack or a monthly plan bought at https://api.kynth.studio. A call that the wallet cannot cover returns `402 insufficient_credits` before any model runs, so it costs nothing and answers immediately.
+There is no free tier. A wallet starts at zero and is topped up by a credit pack or a monthly plan bought at https://api.thecompound.tech. A call that the wallet cannot cover returns `402 insufficient_credits` before any model runs, so it costs nothing and answers immediately.

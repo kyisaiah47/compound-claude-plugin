@@ -24,4 +24,4 @@ Use the `kynth_redact` MCP tool. It detects and strips names, emails, phone numb
 
 3 credits per successful call, 1 credit = $0.01, debited from the account wallet only on success. Failed calls cost nothing.
 
-There is no free tier. A wallet starts at zero and is topped up at https://api.kynth.studio. An uncovered call returns `402 insufficient_credits` before any model runs.
+There is no free tier. A wallet starts at zero and is topped up at https://api.thecompound.tech. An uncovered call returns `402 insufficient_credits` before any model runs.

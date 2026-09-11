@@ -5,12 +5,12 @@ description: Reference for the ParseRail API and its MCP tools. Covers authentic
 
 # ParseRail API reference
 
-ParseRail (https://parserail.kynth.studio, API host https://api.kynth.studio) turns documents and messy text into schema-validated JSON. This plugin exposes it as MCP tools under the server `parserail`, via the `@kynth/api-mcp` package.
+ParseRail (https://parserail.thecompound.tech, API host https://api.thecompound.tech) turns documents and messy text into schema-validated JSON. This plugin exposes it as MCP tools under the server `parserail`, via the `@kynth/api-mcp` package.
 
 ## Authentication
 
 - The MCP server reads the key from the `KYNTH_API_KEY` environment variable. Keys start `ksk_live_`.
-- Mint a key in the dashboard at https://api.kynth.studio.
+- Mint a key in the dashboard at https://api.thecompound.tech.
 - On the wire it is `Authorization: Bearer ksk_live_…`, a header the MCP server sets itself.
 - Tools failing with `401 unauthorized` mean the key is missing or mistyped. Export `KYNTH_API_KEY` and restart Claude Code. The server reads the variable once at startup and exits immediately if it is absent.
 
@@ -20,7 +20,7 @@ ParseRail (https://parserail.kynth.studio, API host https://api.kynth.studio) tu
 - **There is no free tier.** A new wallet starts at zero and nothing tops it up. Credits come from a one-time pack or a monthly plan bought in the dashboard, and they do not expire.
 - A successful call returns its result plus `usage: { credits, balanceRemaining }`.
 - `kynth_account` returns the current balance. It costs nothing.
-- `402 insufficient_credits` means the wallet cannot cover the call. The balance check runs before any model is touched, so an empty wallet costs nothing and answers immediately. Buy credits at https://api.kynth.studio.
+- `402 insufficient_credits` means the wallet cannot cover the call. The balance check runs before any model is touched, so an empty wallet costs nothing and answers immediately. Buy credits at https://api.thecompound.tech.
 
 ## Errors
 
