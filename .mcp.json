@@ -2,9 +2,9 @@
   "mcpServers": {
     "parserail": {
       "command": "npx",
-      "args": ["-y", "@kynth/api-mcp"],
+      "args": ["-y", "@compound/api-mcp"],
       "env": {
-        "KYNTH_API_KEY": "${KYNTH_API_KEY}"
+        "COMPOUND_API_KEY": "${COMPOUND_API_KEY}"
       }
     }
   }

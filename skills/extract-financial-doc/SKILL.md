@@ -11,17 +11,17 @@ Route the document through the ParseRail tool that matches its type. The special
 
 | Document | Tool | Output | Credits |
 | --- | --- | --- | --- |
-| Invoice | `kynth_invoice` | vendor, dates, PO refs, tax, totals, line items | 8 |
-| Receipt | `kynth_receipt` | merchant, items, totals, payment method, expense category | 6 |
-| Bank or card statement | `kynth_statement` | account, period, balances, every transaction as a normalized row | 12 |
-| Tables in any document, scanned included | `kynth_tables` | every table as clean headers and rows | 8 |
-| Resume or CV | `kynth_resume` | contact, skills, experience, education, links | 8 |
-| Contract | `kynth_contract` | parties, effective date, term, renewal, governing law, obligations, risk clauses | 12 |
-| Unknown or other (EOB, ERA, COI) | `kynth_parse` | structured fields, with an optional `docType` hint such as `"invoice"` | 10 |
-| Multi-document scan bundle | `kynth_split` | what each document is and where it starts and ends, then extract each piece | 10 |
-| Two versions of one document | `kynth_compare` | every material change, what it means, the risk it carries | 15 |
+| Invoice | `compound_invoice` | vendor, dates, PO refs, tax, totals, line items | 8 |
+| Receipt | `compound_receipt` | merchant, items, totals, payment method, expense category | 6 |
+| Bank or card statement | `compound_statement` | account, period, balances, every transaction as a normalized row | 12 |
+| Tables in any document, scanned included | `compound_tables` | every table as clean headers and rows | 8 |
+| Resume or CV | `compound_resume` | contact, skills, experience, education, links | 8 |
+| Contract | `compound_contract` | parties, effective date, term, renewal, governing law, obligations, risk clauses | 12 |
+| Unknown or other (EOB, ERA, COI) | `compound_parse` | structured fields, with an optional `docType` hint such as `"invoice"` | 10 |
+| Multi-document scan bundle | `compound_split` | what each document is and where it starts and ends, then extract each piece | 10 |
+| Two versions of one document | `compound_compare` | every material change, what it means, the risk it carries | 15 |
 
-If the user needs the output in their own shape, run the extraction tool first, then pass the result through `kynth_structure` with their JSON Schema. It validates against required fields and property types, retries once correctively, and returns a `valid` flag. That is 6 more credits.
+If the user needs the output in their own shape, run the extraction tool first, then pass the result through `compound_structure` with their JSON Schema. It validates against required fields and property types, retries once correctively, and returns a `valid` flag. That is 6 more credits.
 
 ## 2. Pass the document
 

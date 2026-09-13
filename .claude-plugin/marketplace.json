@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "kynth",
+  "name": "compound",
   "description": "Plugins from Compound Labs. ParseRail puts document parsing, field extraction, PII redaction and contract analysis in Claude Code as native tools.",
   "version": "0.2.0",
   "owner": {
@@ -9,7 +9,7 @@
     "url": "https://thecompound.tech"
   },
   "renames": {
-    "kynth-core": "parserail"
+    "compound-core": "parserail"
   },
   "plugins": [
     {

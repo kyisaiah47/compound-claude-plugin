@@ -1,6 +1,6 @@
 # ParseRail for Claude Code
 
-A [Claude Code](https://code.claude.com) plugin that puts document work in the session, powered by [ParseRail](https://parserail.thecompound.tech). Installing it wires up the [`@kynth/api-mcp`](https://www.npmjs.com/package/@kynth/api-mcp) MCP server (41 tools) and adds three skills that teach Claude how to use it:
+A [Claude Code](https://code.claude.com) plugin that puts document work in the session, powered by [ParseRail](https://parserail.thecompound.tech). Installing it wires up the [`@compound/api-mcp`](https://www.npmjs.com/package/@compound/api-mcp) MCP server (41 tools) and adds three skills that teach Claude how to use it:
 
 | Skill | What it does |
 | --- | --- |
@@ -16,24 +16,24 @@ Inside a Claude Code session. This repo doubles as its own marketplace:
 
 ```
 /plugin marketplace add kyisaiah47/compound-claude-plugin
-/plugin install parserail@kynth
+/plugin install parserail@compound
 ```
 
 Or from your shell:
 
 ```bash
 claude plugin marketplace add kyisaiah47/compound-claude-plugin
-claude plugin install parserail@kynth
+claude plugin install parserail@compound
 ```
 
-Installed before the 0.2.0 rename? The marketplace carries a `renames` entry, so `kynth-core` migrates to `parserail` on its own.
+Installed before the 0.2.0 rename? The marketplace carries a `renames` entry, so `compound-core` migrates to `parserail` on its own.
 
 ## Set your API key
 
 Mint a key at **[api.thecompound.tech](https://api.thecompound.tech)**. Keys start `ksk_live_`. Make it available to the MCP server:
 
 ```bash
-export KYNTH_API_KEY=ksk_live_your_key_here
+export COMPOUND_API_KEY=ksk_live_your_key_here
 ```
 
 Put it in your shell profile so it survives restarts. The server reads it once at startup and exits with a message if it is missing.
@@ -53,13 +53,13 @@ Skills are namespaced under the plugin: `/parserail:extract-financial-doc`, `/pa
 ## Requirements
 
 - Node.js 18 or newer. The MCP server runs via `npx`.
-- A ParseRail API key in `KYNTH_API_KEY`.
+- A ParseRail API key in `COMPOUND_API_KEY`.
 
 ## Also available
 
-- **Gemini CLI**: [kynth-gemini-extension](https://github.com/kyisaiah47/compound-gemini-extension)
-- **Any MCP client**: `npx -y @kynth/api-mcp`, listed in the official MCP registry as `studio.compound/core`
-- **Keyless lookups from Compound Labs**: [kynth-mcp](https://github.com/kyisaiah47/compound-mcp), eleven read-only tools over live public data, no key and no signup
+- **Gemini CLI**: [compound-gemini-extension](https://github.com/kyisaiah47/compound-gemini-extension)
+- **Any MCP client**: `npx -y @compound/api-mcp`, listed in the official MCP registry as `studio.compound/core`
+- **Keyless lookups from Compound Labs**: [compound-mcp](https://github.com/kyisaiah47/compound-mcp), eleven read-only tools over live public data, no key and no signup
 
 ## License
 

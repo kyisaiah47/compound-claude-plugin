@@ -1,11 +1,11 @@
 ---
 name: redact-pii
-description: Strip PII and PHI (names, emails, phones, SSNs, card numbers) from text using the ParseRail kynth_redact tool. Use before storing, logging, sharing, or pasting sensitive text anywhere it should not carry personal data.
+description: Strip PII and PHI (names, emails, phones, SSNs, card numbers) from text using the ParseRail compound_redact tool. Use before storing, logging, sharing, or pasting sensitive text anywhere it should not carry personal data.
 ---
 
 # Redact PII from text
 
-Use the `kynth_redact` MCP tool. It detects and strips names, emails, phone numbers, SSNs, card numbers, and PHI from text.
+Use the `compound_redact` MCP tool. It detects and strips names, emails, phone numbers, SSNs, card numbers, and PHI from text.
 
 ## Parameters
 
@@ -15,8 +15,8 @@ Use the `kynth_redact` MCP tool. It detects and strips names, emails, phone numb
 
 ## Workflow
 
-1. If the sensitive text is in a file, read it and pass the contents as `text`. For a PDF or an image, extract the text first with `kynth_parse`, then redact the result.
-2. Call `kynth_redact` with the text. Default to full redaction, with no `types`, unless the user scoped it.
+1. If the sensitive text is in a file, read it and pass the contents as `text`. For a PDF or an image, extract the text first with `compound_parse`, then redact the result.
+2. Call `compound_redact` with the text. Default to full redaction, with no `types`, unless the user scoped it.
 3. Return the redacted text. Check it against anything the user specifically flagged; if a flagged item survived, run a second pass with an explicit `types` entry for it.
 4. Never echo the original unredacted values back in your summary. The point is that they stop propagating.
 
