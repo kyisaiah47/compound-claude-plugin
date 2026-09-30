@@ -2,9 +2,9 @@
   "mcpServers": {
     "parserail": {
       "command": "npx",
-      "args": ["-y", "@compound/api-mcp"],
+      "args": ["-y", "parserail-mcp"],
       "env": {
-        "COMPOUND_API_KEY": "${COMPOUND_API_KEY}"
+        "PARSERAIL_API_KEY": "${PARSERAIL_API_KEY}"
       }
     }
   }

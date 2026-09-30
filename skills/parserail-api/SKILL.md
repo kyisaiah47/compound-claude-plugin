@@ -5,14 +5,14 @@ description: Reference for the ParseRail API and its MCP tools. Covers authentic
 
 # ParseRail API reference
 
-ParseRail (https://parserail.thecompound.tech, API host https://api.thecompound.tech) turns documents and messy text into schema-validated JSON. This plugin exposes it as MCP tools under the server `parserail`, via the `@compound/api-mcp` package.
+ParseRail (https://parserail.thecompound.tech, API host https://api.thecompound.tech) turns documents and messy text into schema-validated JSON. This plugin exposes it as MCP tools under the server `parserail`, via the `parserail-mcp` package.
 
 ## Authentication
 
-- The MCP server reads the key from the `COMPOUND_API_KEY` environment variable. Keys start `ksk_live_`.
+- The MCP server reads the key from the `PARSERAIL_API_KEY` environment variable. Keys start `ksk_live_`.
 - Mint a key in the dashboard at https://api.thecompound.tech.
 - On the wire it is `Authorization: Bearer ksk_live_…`, a header the MCP server sets itself.
-- Tools failing with `401 unauthorized` mean the key is missing or mistyped. Export `COMPOUND_API_KEY` and restart Claude Code. The server reads the variable once at startup and exits immediately if it is absent.
+- Tools failing with `401 unauthorized` mean the key is missing or mistyped. Export `PARSERAIL_API_KEY` and restart Claude Code. The server reads the variable once at startup and exits immediately if it is absent.
 
 ## Credits
 
