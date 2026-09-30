@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "id": "parserail-credit-unit",
+      "claim": "ParseRail credit unit price",
+      "value": "1 credit = $0.01",
+      "kind": "price",
+      "sourceUrl": "https://parserail.thecompound.tech/docs/credits",
+      "sourceTitle": "ParseRail — Credits & pricing",
+      "asOf": "2026-09-30",
+      "appearsOn": ["README.md", "skills/parserail-api/SKILL.md", "skills/extract-financial-doc/SKILL.md", "skills/redact-pii/SKILL.md"],
+      "lastVerified": "2026-09-30",
+      "status": "verified"
+    },
+    {
+      "id": "parserail-success-only-billing",
+      "claim": "ParseRail charges only successful calls",
+      "value": "A call is charged only when it succeeds; failed calls cost nothing",
+      "kind": "billing-rule",
+      "sourceUrl": "https://parserail.thecompound.tech/docs/credits",
+      "sourceTitle": "ParseRail — Credits & pricing",
+      "asOf": "2026-09-30",
+      "appearsOn": ["README.md", "skills/parserail-api/SKILL.md", "skills/extract-financial-doc/SKILL.md", "skills/redact-pii/SKILL.md"],
+      "lastVerified": "2026-09-30",
+      "status": "verified"
+    },
+    {
+      "id": "parserail-credit-expiry",
+      "claim": "ParseRail credits expiry policy",
+      "value": "Credits never expire",
+      "kind": "policy",
+      "sourceUrl": "https://parserail.thecompound.tech/docs/credits",
+      "sourceTitle": "ParseRail — Credits & pricing",
+      "asOf": "2026-09-30",
+      "appearsOn": ["skills/parserail-api/SKILL.md"],
+      "lastVerified": "2026-09-30",
+      "status": "verified"
+    },
+    {
+      "id": "parserail-transcribe-status",
+      "claim": "ParseRail transcription endpoint availability",
+      "value": "Transcription is paused; a paused endpoint returns 503 and charges nothing",
+      "kind": "availability",
+      "sourceUrl": "https://parserail.thecompound.tech/status",
+      "sourceTitle": "ParseRail — Status",
+      "asOf": "2026-09-30",
+      "appearsOn": ["skills/parserail-api/SKILL.md"],
+      "lastVerified": "2026-09-30",
+      "status": "verified"
+    }
+  ]
+}
