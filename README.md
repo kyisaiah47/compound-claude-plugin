@@ -15,14 +15,14 @@ ParseRail is the developer platform from [Compound Labs](https://thecompound.tec
 Inside a Claude Code session. This repo doubles as its own marketplace:
 
 ```
-/plugin marketplace add kyisaiah47/compound-claude-plugin
+/plugin marketplace add kyisaiah47/parserail-claude-plugin
 /plugin install parserail@compound
 ```
 
 Or from your shell:
 
 ```bash
-claude plugin marketplace add kyisaiah47/compound-claude-plugin
+claude plugin marketplace add kyisaiah47/parserail-claude-plugin
 claude plugin install parserail@compound
 ```
 
