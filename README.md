@@ -59,7 +59,7 @@ Skills are namespaced under the plugin: `/parserail:extract-financial-doc`, `/pa
 
 - **Gemini CLI**: [parserail-gemini-extension](https://github.com/kyisaiah47/parserail-gemini-extension)
 - **Any MCP client**: `npx -y parserail-mcp`, listed in the official MCP registry as `tech.thecompound/parserail-mcp`
-- **Keyless lookups from Compound Labs**: [OpenLookup](https://github.com/kyisaiah47/openlookup) (`npx -y openlookup`), eleven read-only tools over live public data, no key and no signup
+- **Keyless lookups from Compound Labs**: [OpenLookup](https://github.com/kyisaiah47/openlookup) (`npx -y openlookup`) provides eleven read-only tools over live public data. You need no API key or signup.
 
 ## License
 
