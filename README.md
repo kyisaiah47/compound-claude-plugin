@@ -1,6 +1,6 @@
 # ParseRail for Claude Code
 
-A [Claude Code](https://code.claude.com) plugin that puts document work in the session, powered by [ParseRail](https://parserail.thecompound.tech). Installing it wires up the [`parserail-mcp`](https://www.npmjs.com/package/parserail-mcp) MCP server (41 tools) and adds three skills that teach Claude how to use it:
+This [Claude Code](https://code.claude.com) plugin puts document work in the session through [ParseRail](https://parserail.thecompound.tech). Installing the plugin configures the [`parserail-mcp`](https://www.npmjs.com/package/parserail-mcp) MCP server with 41 tools and adds three skills that teach Claude how to use it:
 
 | Skill | What it does |
 | --- | --- |
@@ -12,7 +12,7 @@ ParseRail is the developer platform from [Compound Labs](https://thecompound.tec
 
 ## Install
 
-Inside a Claude Code session. This repo doubles as its own marketplace:
+Run these commands inside a Claude Code session. This repository also serves as its own marketplace:
 
 ```
 /plugin marketplace add kyisaiah47/parserail-claude-plugin
@@ -30,15 +30,15 @@ Installed before the 0.2.0 rename? The marketplace carries a `renames` entry, so
 
 ## Set your API key
 
-Mint a key at **[api.thecompound.tech](https://api.thecompound.tech)**. Keys start `ksk_live_`. Make it available to the MCP server:
+Create a key at **[api.thecompound.tech](https://api.thecompound.tech)**. Keys start `ksk_live_`. Make the key available to the MCP server:
 
 ```bash
 export PARSERAIL_API_KEY=ksk_live_your_key_here
 ```
 
-Put it in your shell profile so it survives restarts. The server reads it once at startup and exits with a message if it is missing.
+Keep the key in your shell profile so it survives restarts. The server reads the key once at startup and exits with a message if the key is missing.
 
-Billing is pay-per-call from a credit wallet at 1 credit = $0.01, and **only successful calls are charged**. Errors and retries cost nothing. There is no free tier: a wallet starts at zero and is topped up with a credit pack or a monthly plan in the dashboard.
+You pay per call from a credit wallet at 1 credit = $0.01, and **only successful calls are charged**. Errors and retries cost nothing. There is no free tier: a wallet starts at zero and you top it up with a credit pack or a monthly plan in the dashboard.
 
 ## Use it
 
@@ -48,17 +48,17 @@ Billing is pay-per-call from a credit wallet at 1 credit = $0.01, and **only suc
 > what's my parserail credit balance?
 ```
 
-Skills are namespaced under the plugin: `/parserail:extract-financial-doc`, `/parserail:redact-pii`, `/parserail:parserail-api`. Claude also invokes them on its own when a task matches.
+The plugin namespaces these skills: `/parserail:extract-financial-doc`, `/parserail:redact-pii`, `/parserail:parserail-api`. Claude also invokes a skill on its own when a task matches.
 
 ## Requirements
 
-- Node.js 18 or newer. The MCP server runs via `npx`.
-- A ParseRail API key in `PARSERAIL_API_KEY`.
+- You need Node.js 18 or newer. The MCP server runs via `npx`.
+- You need a ParseRail API key in `PARSERAIL_API_KEY`.
 
 ## Also available
 
 - **Gemini CLI**: [parserail-gemini-extension](https://github.com/kyisaiah47/parserail-gemini-extension)
-- **Any MCP client**: `npx -y parserail-mcp`, listed in the official MCP registry as `tech.thecompound/parserail-mcp`
+- Any MCP client can run `npx -y parserail-mcp`. The official MCP registry lists the package as `tech.thecompound/parserail-mcp`.
 - **Keyless lookups from Compound Labs**: [OpenLookup](https://github.com/kyisaiah47/openlookup) (`npx -y openlookup`) provides eleven read-only tools over live public data. You need no API key or signup.
 
 ## License
